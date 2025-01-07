@@ -1,0 +1,7 @@
+version: '3'
+services:
+  api:
+    image: api-local:latest   # Replace with your image name and tag
+    ports:
+      - "8080:8080"           # Map port 8080 from the container to port 8080 on your local machine
+    restart: unless-stopped    # Optional, but helps keep the container running
